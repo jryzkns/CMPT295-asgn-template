@@ -1,0 +1,56 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{CMPT 295 Assignment X}
+\author{Ma Name Jeff}
+\date{student number}
+
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{booktabs}
+
+\usepackage{listings}
+
+\lstdefinelanguage
+   [x64]{Assembler}     % add a "x64" dialect of Assembler
+   [x86masm]{Assembler} % based on the "x86masm" dialect
+   % with these extra keywords:
+   {morekeywords={CDQE,CQO,CMPSQ,CMPXCHG16B,JRCXZ,LODSQ,MOVSXD, %
+                  POPFQ,PUSHFQ,SCASQ,STOSQ,IRETQ,RDTSCP,SWAPGS, %
+                  rax,rdx,rcx,rbx,rsi,rdi,rsp,rbp, %
+                  r8,r8d,r8w,r8b,r9,r9d,r9w,r9b, %
+                  r10,r10d,r10w,r10b,r11,r11d,r11w,r11b, %
+                  r12,r12d,r12w,r12b,r13,r13d,r13w,r13b, %
+                  r14,r14d,r14w,r14b,r15,r15d,r15w,r15b,
+                  imull}} % etc.
+
+\lstset{language=[x64]Assembler}
+
+\begin{document}
+
+\maketitle
+
+\section{Awooo Nyah}
+Yes.
+
+\section{Sample code}
+The code for the following can be found in \texttt{kek.s}
+\begin{lstlisting}
+
+	.globl kek
+kek:
+	cmp $cross, $me # try crossing me
+	je gtfo
+gtfo:
+	mov $fuck, %here # get the fuck out of here
+	ret
+
+\end{lstlisting}
+
+
+\end{document}
